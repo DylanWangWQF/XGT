@@ -1,0 +1,76 @@
+{
+    "_desc_num_parties": "Number of parties involved in the MPC computation. Should match compiled application protocol.",
+    "num_parties": 3,
+
+    "_desc_party_ips": "IP addresses of each party, ordered by party number",
+    "party_ips": ["172.17.0.2", "172.17.0.2", "172.17.0.2"],
+
+    "_desc_party_users": "Usernames for each party, ordered by party number. Can be used by scripts to SSH into machines if necessary to start piranha processes",
+    "party_users": [],
+
+    "_desc_run_unit_tests": "Run unit tests",
+    "run_unit_tests": false,
+
+    "_desc_unit_test_only": "Only run unit tests, do not try to run any full applications",
+    "unit_test_only": false,
+
+    "_desc_debug_print": "Show debug output",
+    "debug_print": false,
+
+    "_desc_debug_overflow": "Test for overflow and print related debug output. Breaks security by revealing intermediary values.",
+    "debug_overflow": false,
+
+    "_desc_run_name": "Descriptive name for run, used to name log files with something useful",
+    "run_name": "piranha_localhost",
+
+    "_desc_train_data_path": "Path to training data",
+    "train_data_path": "data/expData",
+
+    "_desc_tra_param": "For training data: batch size, the total number of data, number of features, tree depth",
+    "tra_param": [10000, 10000, 8, 6],
+
+    "_desc_tree_iter_stats": "Print acumulative runtime and communication statistics for each tree iteration (in level)",
+    "tree_iter_stats": false,
+
+    "_desc_total_train_stats": "Print acumulative runtime and communication statistics for whole training",
+    "total_train_stats": true,
+    
+    "_desc_all_Func_stats": "Print acumulative runtime and communication statistics for each sub-protocols",
+    "all_Func_stats": true,
+
+    "_desc_self_define_scale": "Determine if define the scale factor by users",
+    "self_define_scale": false,
+
+    "_desc_scale_factor": "scale factor is used to scale numerator and denominator in Gini Index",
+    "scale_factor": [250],
+
+    "_desc_compute_GiniIndex_SGX": "Choose the solution for computing Heuristic Measure (True: SGX; False: MPC)",
+    "compute_GiniIndex_SGX": true,
+
+    "_desc_compute_Gini_stats": "print the run time for computing Gini Index",
+    "compute_Gini_stats": true,
+
+    "_desc_if_run_inference": "whether run inference or not",
+    "if_run_inference": true,
+
+    "_desc_real_inf_data_path": "Path to inference data",
+    "real_inf_data_path": "data/expData/inf_1000_8.csv",
+
+    "_desc_real_inf_param": "For real inference data: the total number of inference data",
+    "real_inf_param": [1000],
+
+    "_desc_accuracy_in_real_inf": "Compute and print the accuracy in real inference",
+    "accuracy_in_real_inf": true,
+
+    "_desc_total_inference_stats": "Print acumulative runtime and communication statistics for whole inference",
+    "total_inference_stats": true,
+
+    "_desc_if_simulate_inference": "whether simulate inference or not for evaluation results",
+    "if_simulate_inference": false,
+
+    "_desc_inf_data_path": "Path to inference data",
+    "inf_data_path": "data/expData/inf_1000_8.csv",
+
+    "_desc_inf_param": "For inference data: the total number of inference data, number of features, tree depth",
+    "inf_param": [10000, 2, 2]
+}
